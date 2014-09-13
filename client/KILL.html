@@ -1,0 +1,22 @@
+<head>
+  <title>KILL</title>
+</head>
+
+<body>
+  {{> hello}}
+  <!-- {{> box}} -->
+</body>
+
+<template name="hello">
+  <h1>Fridge Magnet!</h1>
+  <input id="textadd" type="textbox" placeholder="Letter Example: H">
+  <input class="text" type="button" value="Create Magnet">
+  {{greeting}}
+  {{box}}
+  {{#each positions}}
+  	{{> box}}
+  {{/each}}
+</template>
+<template name="box">
+	{{>hello}}
+</template>
